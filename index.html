@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kő papír olló</title>
+        <style>
+            
+            body{
+            background-color:       #000;
+            background-image:       url('Hatter.jpg');
+            background-repeat:      no-repeat;
+            background-position:    top; 
+            background-attachment:  fixed;
+            background-size:        100%;
+        }
+        img{
+            border:             1px solid #3e77eb;
+            border-radius:      4px;
+            margin:             3%;
+            height:             13vw;
+            margin-inline:      center;
+            margin-top: 100px;
+        }
+        h1{
+            color:              #3e77e9;
+            margin-right:       40vw;
+            font-size:          xxx-large;
+            font-family:        "sans";
+        }
+        h2{
+            color:              #3e77e9;
+            margin-left:        40vw;
+            margin-top:         -180px;
+            font-size:          xxx-large;
+            font-family:        "sans";
+        }
+        .box {
+            text-align:         center;
+            margin-top:         10px;
+            padding:            0px;
+        }
+        .thing{
+            font-family:        "sans";
+            text-align:         center;
+            font-size:          xxx-large;
+            color:              #3e77eb;
+            margin-left:        1000px;
+        }
+        .result{
+            font-family:        "sans";
+            text-align:         left;
+            font-size:          xxx-large;
+            color:              #3e77eb;
+            margin-left: 40vw;
+        }
+        .enemy{
+            font-family:        "sans";
+            text-align:         left;
+            font-size:          xxx-large;
+            color:              #B5032C;
+            margin-top:         150px;
+            margin-left: 42vw;
+        }
+        .button {
+            border:             none;
+            text-align:         center;
+            display:            inline-block;
+            background-color:   transparent;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div class = "box">
+            <h1>Válassz:</h1>
+            <h1>Kő, Papír vagy Olló</h1>
+            <h2>Győzelmi arány: </h2>
+            <div class = "thing">
+                <div id = "percent"> 0.00%</div>
+            </div>
+            <div id = "gombok">
+                <button class = "button" id = "rock"><img src = "Ko.jpg" style="cursor:pointer;" id = "rock"></button>
+                <button class = "button" id = "paper"><img src = "Papir.jpg" style="cursor:pointer;" id = "paper"></button>
+                <button class = "button" id = "scissor"><img src = "Ollo.jpg" style="cursor:pointer;" id = "scissor"></button>
+            </div>
+            
+            <div class = "enemy">
+                <div id = "ellen">Ellenfél: </div>
+            </div>
+            <div class = "result">
+                <div id = "res"> Eredmény: </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
